@@ -16,103 +16,21 @@
         android:layout_weight="1"
         >
 
+        <ProgressBar
+            android:id="@+id/loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            />
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="?android:attr/buttonBarStyle"
-                >
-
-                <Button
-                    android:id="@+id/add_item"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:text="Add item"
-                    />
-
-                <Button
-                    android:id="@+id/remove_item"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:text="Remove item"
-                    />
-            </LinearLayout>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="My edit text"
-                android:padding="5dp"
-                />
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                >
-
-            <android.support.design.widget.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="TextInputEditText"
-                />
-            </android.support.design.widget.TextInputLayout>
-
-            <RadioGroup
-                android:id="@+id/myradiogroup"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                >
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="radio 1"
-                    />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="radio 2"
-                    />
-            </RadioGroup>
-
-            <CheckBox
-                android:id="@+id/mycheckbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="My checkbox"
-                android:padding="5dp"
-                />
-
-            <Switch
-                android:id="@+id/myswitch"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="My switch"
-                android:padding="5dp"
-                />
-            <ProgressBar
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                />
-            <Spinner
-                android:id="@+id/myspinner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/myRecyclerView"
